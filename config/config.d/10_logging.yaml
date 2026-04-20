@@ -1,0 +1,4 @@
+# 10_logging.yaml - Logging overrides
+logging:
+  level: INFO
+  rotate: false

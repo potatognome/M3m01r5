@@ -1,0 +1,5 @@
+# 20_display.yaml - Display overrides
+display:
+  show_banner: true
+  border_width: 70
+  rainbow_borders: true

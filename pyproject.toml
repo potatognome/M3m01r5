@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "M3m01r5"
+version = "0.3.0"
+description = "Personal journalling and memoir archiving utility with drop-in categorical descriptors."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { file = "LICENSE" }
+authors = [
+    { name = "Daniel Austin", email = "the.potato.gnome@gmail.com" }
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent"
+]
+dependencies = [
+    "tUilKit>=0.5.1",
+    "pyyaml>=6.0"
+]
+
+[project.scripts]
+m3m01r5 = "M3m01r5.main:main"
+
+[project.urls]
+Repository = "https://github.com/potatognome/dev_local"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["M3m01r5*"]
+
+

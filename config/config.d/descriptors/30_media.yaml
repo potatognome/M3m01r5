@@ -1,0 +1,14 @@
+# Drop-in descriptor: media attachments
+descriptors:
+  IMAGES:
+    type: list
+    required: false
+    description: "List of image file paths or URLs associated with this entry."
+    sortable: false
+    searchable: false
+  FILES:
+    type: list
+    required: false
+    description: "List of file paths or URLs attached to this entry."
+    sortable: false
+    searchable: false

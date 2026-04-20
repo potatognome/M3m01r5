@@ -1,0 +1,122 @@
+{
+    "INFO": {
+        "PROJECT_NAME": "M3m01r5",
+        "PROJECT_FOLDER": "M3m01r5",
+        "PROJECT_DESCRIPTION": "Personal journalling and memoir archiving utility with drop-in categorical descriptors.",
+        "AUTHOR": "Daniel Austin <the.potato.gnome@gmail.com>",
+        "VERSION": "0.3.0",
+        "MAIN_ENTRY_POINT": "src/M3m01r5/main.py"
+    },
+    "ROOTS": {
+        "PROJECT": "./SuiteTools/M3m01r5",
+        "WORKSPACE": "."
+    },
+    "ROOT_MODES": {
+        "ROOT_MODES: project": "Paths are relative to the project root.",
+        "ROOT_MODES: workspace": "Paths are relative to the workspace root.",
+        "CONFIG": "project",
+        "LOGS": "project",
+        "INPUTS": "project",
+        "OUTPUTS": "project",
+        "TEST_CONFIG": "project",
+        "TEST_LOGS": "workspace",
+        "TEST_INPUTS": "project",
+        "TEST_OUTPUTS": "workspace"
+    },
+    "PATHS": {
+        "CONFIG": "config/",
+        "LOGS": "logFiles/",
+        "INPUTS": "data/entries/",
+        "OUTPUTS": "data/exports/",
+        "TEST_CONFIG": "config/",
+        "TEST_LOGS": ".test_logs/M3m01r5/",
+        "TEST_INPUTS": "tests/test_data/",
+        "TEST_OUTPUTS": ".tests_data/M3m01r5/outputs/"
+    },
+    "SHARED_CONFIG": {
+        "ENABLED": true,
+        "PATH": "GLOBAL_SHARED.d/",
+        "FILES": {
+            "COLOURS": "COLOURS.json",
+            "BORDER_PATTERNS": "BORDER_PATTERNS.json",
+            "TESTS_OPTIONS": "TESTS_OPTIONS.json",
+            "TIME_STAMP_OPTIONS": "TIME_STAMP_OPTIONS.json"
+        }
+    },
+    "ALT_CONFIG": {
+        "ENABLED": false,
+        "PATH": "",
+        "FILES": {
+            "COLOURS": "",
+            "BORDER_PATTERNS": "",
+            "TESTS_OPTIONS": "",
+            "TIME_STAMP_OPTIONS": ""
+        }
+    },
+    "LOG_FILES": {
+        "MASTER": "M3m01r5_MASTER.log",
+        "SESSION": "M3m01r5_SESSION.log",
+        "RUNTIME": "M3m01r5_RUNTIME.log",
+        "ERROR": "M3m01r5_ERROR.log",
+        "DEBUG": "M3m01r5_DEBUG.log",
+        "WARNING": "M3m01r5_WARNING.log",
+        "INIT": "M3m01r5_INIT.log",
+        "FS": "M3m01r5_FS.log"
+    },
+    "LOG_CATEGORIES": {
+        "default": [
+            "MASTER",
+            "SESSION",
+            "RUNTIME"
+        ],
+        "error": [
+            "MASTER",
+            "SESSION",
+            "RUNTIME",
+            "ERROR"
+        ],
+        "fs": [
+            "MASTER",
+            "SESSION",
+            "RUNTIME",
+            "FS"
+        ],
+        "init": [
+            "MASTER",
+            "SESSION",
+            "RUNTIME",
+            "INIT"
+        ],
+        "debug": [
+            "MASTER",
+            "SESSION",
+            "RUNTIME",
+            "DEBUG"
+        ],
+        "warning": [
+            "MASTER",
+            "SESSION",
+            "RUNTIME",
+            "WARNING"
+        ],
+        "all": [
+            "MASTER",
+            "SESSION",
+            "RUNTIME",
+            "ERROR",
+            "FS",
+            "INIT",
+            "DEBUG",
+            "WARNING"
+        ]
+    },
+
+    "CONFIG_FILES": {
+        "GLOBAL_CONFIG": "config/M3m01r5_CONFIG.json",
+        "M3M01R5_CONFIG": "config/m3m01r5_config.yaml"
+    },
+    "DISPLAY": {
+        "COLOUR_ENABLED": true,
+        "LOGGING": "verbose"
+    }
+}

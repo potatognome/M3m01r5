@@ -1,0 +1,37 @@
+# m3m01r5_config.yaml - M3m01r5 Root Configuration
+# All config.d/*.yaml files are deep-merged over this in lexical order.
+
+project:
+  name: M3m01r5
+  version: "0.1.0"
+  description: "Personal journalling and memoir archiving utility."
+
+journal:
+  data_dir: "data/entries"
+  file_extension: ".yaml"
+  date_format: "%Y-%m-%dT%H:%M:%S"
+
+entry:
+  mandatory_fields:
+    - ENTRY_START    # datetime: when the entry was written
+    - ENTRY_TYPES    # list[str]: categories/tags for this entry
+    - ENTRY          # str (multi-line): the journal body text
+  sortable_fields:
+    - ENTRY_START
+  searchable_fields:
+    - ENTRY_TYPES
+    - ENTRY
+
+logging:
+  level: INFO
+  log_files:
+    SESSION: "logFiles/SESSION.log"
+    MASTER:  "logFiles/MASTER.log"
+    ERROR:   "logFiles/ERROR.log"
+
+colours:
+  enabled: true
+
+display:
+  show_banner: true
+  border_width: 70

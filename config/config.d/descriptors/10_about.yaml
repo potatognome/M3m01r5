@@ -1,0 +1,15 @@
+# Drop-in descriptor: ABOUT fields
+# These describe WHEN the entry's content refers to (as opposed to WHEN it was written).
+descriptors:
+  ABOUT_START:
+    type: datetime
+    required: false
+    description: "Datetime of when the described event began."
+    sortable: true
+    searchable: false
+  ABOUT_END:
+    type: datetime
+    required: false
+    description: "Datetime of when the described event ended."
+    sortable: false
+    searchable: false

@@ -1,0 +1,20 @@
+# Drop-in descriptor: metadata fields
+descriptors:
+  AUTHOR:
+    type: str
+    required: false
+    description: "Author or writer of this entry."
+    sortable: true
+    searchable: true
+  TAGS:
+    type: list
+    required: false
+    description: "Free-form tags for this entry."
+    sortable: false
+    searchable: true
+  LOCATION:
+    type: str
+    required: false
+    description: "Physical location where the entry was written."
+    sortable: false
+    searchable: true

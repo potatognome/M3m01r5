@@ -1,0 +1,12 @@
+# Drop-in descriptor: feelings/emotions dictionary
+descriptors:
+  ABOUT_FEELINGS:
+    type: dict
+    required: false
+    description: "Dictionary of emotional categories and their intensity (0-10)."
+    sortable: false
+    searchable: true
+    example:
+      joy: 8
+      nostalgia: 7
+      anxiety: 2
