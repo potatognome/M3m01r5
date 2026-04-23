@@ -21,3 +21,21 @@ Refer to:
 - Keep journal entry storage and export paths driven by config, not by local user-directory assumptions.
 - Preserve deterministic export structure and naming where the app depends on archival order.
 - Keep text-processing, categorization, and persistence logic modular and testable.
+
+## Building Exemplar Policy
+
+The `examples/` folder must include supplementary scripts that run outside pytest and stress public APIs and menu/error paths.
+
+Requirements:
+- Exercise all public functions across normal and adversarial input scenarios.
+- Deliberately stress UI/menu edge cases (empty input, out-of-range values, special characters, very long strings).
+- Produce visual, interactive, colour-logged output alongside structured logs for human review.
+- Keep scripts as living behavior documentation.
+- Maintain an `examples/exemplar.py` mock application entry point.
+
+`examples/exemplar.py` should:
+- Load tUilKit factory imports in verbose mode where available (for example, ConfigLoader).
+- Generate a standard CLI menu with project header and submenus.
+- Read the project primary config file.
+- Read and test-load all `ROOT_MODES`.
+- Verify and display resolved paths for `LOG_FILES`, config files, and input data files.
