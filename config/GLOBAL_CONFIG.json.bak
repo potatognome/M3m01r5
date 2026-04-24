@@ -1,14 +1,10 @@
 {
-    "INFO": {
-        "PROJECT_FOLDER": "/Applications/M3m01r5/",
-        "PROJECT_DESCRIPTION": "{PROJECT_DESCRIPTION}",
-        "AUTHOR": "{AUTHOR}",
-        "MAIN_ENTRY_POINT": "M3m01r5.main:main"
-    },
-    "ROOTS": {
-        "WORKSPACE": "C:\\Repository\\Daniel\\dev_local",
-        "PROJECT": "C:\\Repository\\Daniel\\dev_local\\Applications\\M3m01r5"
-    },
+    "PROJECT_NAME": "M3m01r5",
+    "PROJECT_FOLDER": "M3m01r5",
+    "PROJECT_DESCRIPTION": "Personal journalling and memoir archiving utility with drop-in categorical descriptors.",
+    "AUTHOR": "Daniel Austin <the.potato.gnome@gmail.com>",
+    "VERSION": "0.1.0",
+    "MAIN_ENTRY_POINT": "src/M3m01r5/main.py",
     "ROOT_MODES": {
         "LOGS": "project",
         "TEST_LOGS": "project",
@@ -34,6 +30,34 @@
         "TESTS_INPUTS": ".tests_data/",
         "TESTS_OUTPUTS": ".tests_data/output/"
     },
+    "CONFIG_FILES": {
+        "GLOBAL_CONFIG": "config/GLOBAL_CONFIG.json",
+        "M3M01R5_CONFIG": "config/m3m01r5_config.yaml"
+    },
+    "LOG_FILES": {
+        "SESSION": "logFiles/SESSION.log",
+        "MASTER": "logFiles/MASTER.log",
+        "ERROR": "logFiles/ERROR.log",
+        "RUNTIME": "M3m01r5_RUNTIME.log",
+        "TRY": "M3m01r5_TRY.log",
+        "INIT": "M3m01r5_INIT.log",
+        "FS": "M3m01r5_FS.log",
+        "CONFIG_READ": "M3m01r5_CONFIG_READ.log"
+    },
+    "DISPLAY": {
+        "COLOUR_ENABLED": true,
+        "LOGGING": "verbose"
+    },
+    "INFO": {
+        "PROJECT_FOLDER": "/Applications/M3m01r5/",
+        "PROJECT_DESCRIPTION": "{PROJECT_DESCRIPTION}",
+        "AUTHOR": "{AUTHOR}",
+        "MAIN_ENTRY_POINT": "M3m01r5.main:main"
+    },
+    "ROOTS": {
+        "WORKSPACE": "C:\\Repository\\Daniel\\dev_local",
+        "PROJECT": "C:\\Repository\\Daniel\\dev_local\\Applications\\M3m01r5"
+    },
     "SHARED_CONFIG": {
         "ENABLED": true,
         "PATH": "GLOBAL_SHARED.d/",
@@ -53,16 +77,6 @@
             "TESTS_OPTIONS": "",
             "TIME_STAMP_OPTIONS": ""
         }
-    },
-    "LOG_FILES": {
-        "SESSION": "logFiles/SESSION.log",
-        "MASTER": "logFiles/MASTER.log",
-        "ERROR": "logFiles/ERROR.log",
-        "RUNTIME": "M3m01r5_RUNTIME.log",
-        "TRY": "M3m01r5_TRY.log",
-        "INIT": "M3m01r5_INIT.log",
-        "FS": "M3m01r5_FS.log",
-        "CONFIG_READ": "M3m01r5_CONFIG_READ.log"
     },
     "LOG_CATEGORIES": {
         "default": [
@@ -109,19 +123,5 @@
             "CONFIG_READ",
             "ERROR"
         ]
-    },
-    "PROJECT_NAME": "M3m01r5",
-    "PROJECT_FOLDER": "M3m01r5",
-    "PROJECT_DESCRIPTION": "Personal journalling and memoir archiving utility with drop-in categorical descriptors.",
-    "AUTHOR": "Daniel Austin <the.potato.gnome@gmail.com>",
-    "VERSION": "0.1.0",
-    "MAIN_ENTRY_POINT": "src/M3m01r5/main.py",
-    "CONFIG_FILES": {
-        "GLOBAL_CONFIG": "config/GLOBAL_CONFIG.json",
-        "M3M01R5_CONFIG": "config/m3m01r5_config.yaml"
-    },
-    "DISPLAY": {
-        "COLOUR_ENABLED": true,
-        "LOGGING": "verbose"
     }
 }

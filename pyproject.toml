@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "M3m01r5"
-version = "0.3.0"
+version = "0.3.9"
 description = "Personal journalling and memoir archiving utility with drop-in categorical descriptors."
 readme = "README.md"
 requires-python = ">=3.9"
@@ -31,5 +31,7 @@ Repository = "https://github.com/potatognome/dev_local"
 [tool.setuptools.packages.find]
 where = ["src"]
 include = ["M3m01r5*"]
+
+
 
 
